@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav {
+  background-color: #feefc3;
+  box-shadow: 0px 2px 5px 0px #aaa;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  justify-content: flex-start !important;
+}
+a.navbar-brand {
+  color: black;
+}
+a.navbar-brand:hover {
+  color: #52513d;
+}
+.row {
+  justify-content: center;
+}
+.my_notes p {
+  color: grey;
+}
+form {
+  min-height: 50px;
+  color: #c4a756;
+  box-shadow: 3px 5px 15px -5px;
+  border-radius: 10px;
+}
+input {
+  width: 100%;
+  line-height: 30px !important;
+  outline: none;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+textarea {
+  width: 100%;
+  line-height: 30px !important;
+  outline: none;
+  font-size: 1rem !important;
+}
+.MuiButton-text {
+  float: right;
+}
+.MuiButton-root {
+  color: #ffc107 !important;
+  height: 50px;
+  background-color: #fff !important;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 50% !important;
+}
+.MuiButton-root:hover {
+  color: #fff !important;
+  background: #feefc3 !important;
+}
+.note {
+  word-wrap: break-word;
+}
+.note h1 {
+  font-size: 1.3em;
+}
+.note .btn {
+  float: right;
+  color: #ff8585;
+  background-color: #fff !important;
+  border-radius: 50%;
+}
+.note .btn:hover {
+  background-color: #ff8585 !important;
+  color: #fff !important;
 }
