@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/notekeeper/static/css/main.7a6599db.chunk.css",
+    "main.js": "/notekeeper/static/js/main.59ab0116.chunk.js",
+    "main.js.map": "/notekeeper/static/js/main.59ab0116.chunk.js.map",
+    "runtime-main.js": "/notekeeper/static/js/runtime-main.10ad2dc4.js",
+    "runtime-main.js.map": "/notekeeper/static/js/runtime-main.10ad2dc4.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/notekeeper/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.cd8a3df1.chunk.js": "/notekeeper/static/js/2.cd8a3df1.chunk.js",
+    "static/js/2.cd8a3df1.chunk.js.map": "/notekeeper/static/js/2.cd8a3df1.chunk.js.map",
+    "index.html": "/notekeeper/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/notekeeper/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.7a6599db.chunk.css.map": "/notekeeper/static/css/main.7a6599db.chunk.css.map",
+    "static/js/2.cd8a3df1.chunk.js.LICENSE.txt": "/notekeeper/static/js/2.cd8a3df1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10ad2dc4.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.cd8a3df1.chunk.js",
+    "static/css/main.7a6599db.chunk.css",
+    "static/js/main.59ab0116.chunk.js"
+  ]
+}
