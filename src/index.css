@@ -10,25 +10,21 @@ a.navbar-brand {
 }
 a.navbar-brand:hover {
   color: #52513d;
+} 
+input.form-control:focus {
+  box-shadow: none;
 }
-.row {
-  justify-content: center;
-}
-.my_notes p {
-  color: grey;
-}
-form {
+.frm {
   min-height: 50px;
   color: #c4a756;
   box-shadow: 3px 5px 15px -5px;
   border-radius: 10px;
 }
-input {
+.inpt {
   width: 100%;
   line-height: 30px !important;
   outline: none;
   font-size: 1.5rem !important;
-  font-weight: bold !important;
 }
 textarea {
   width: 100%;
@@ -50,14 +46,12 @@ textarea {
   color: #fff !important;
   background: #feefc3 !important;
 }
-.note {
-  word-wrap: break-word;
-}
 .note h1 {
   font-size: 1.3em;
 }
 .note .btn {
   float: right;
+  outline: none !important;
   color: #ff8585;
   background-color: #fff !important;
   border-radius: 50%;

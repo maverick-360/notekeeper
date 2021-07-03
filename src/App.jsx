@@ -6,6 +6,7 @@ import Footer from './Footer';
 
 const App = () => {
     const [addItem, setaddItem] = useState([]);
+    const [state, setstate] = useState("");
     const addNote = (note) => {
         setaddItem((prevData) => {
             return [...prevData, note];
@@ -20,13 +21,24 @@ const App = () => {
         })
     }
 
+    const searchFilter = (SearchTerm) => {
+        setstate(SearchTerm);
+    }
+
     return (
         <>
-            <Header />
+            <Header searchIt={searchFilter} />
             <CreateNote passNote={addNote} />
             <div className="container">
-                <div className="row g-3">
-                    {addItem.map((val, index) => {
+                <div className="row mb-5 g-3 justify-content-start">
+                    {addItem.filter((val) => {
+                        if (state.trim() === "") {
+                            return val;
+                        }
+                        else if (val.title.toLowerCase().includes(state.toLowerCase())) {
+                            return val;
+                        }
+                    }).map((val, index) => {
                         return <Note
                             key={index}
                             id={index}

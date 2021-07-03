@@ -20,7 +20,9 @@ const CreateNote = (props) => {
     };
 
     const addEvent = () => {
-        props.passNote(note);
+        if (note.content || note.title) {
+            props.passNote(note);
+        }
         setnote({
             title: "",
             content: ""
@@ -36,12 +38,12 @@ const CreateNote = (props) => {
     }
 
     return (
-        <div className="row m-5">
+        <div className="row m-5 justify-content-center">
             <div className="col-lg-10 col-md-10 col-10 main_note">
-                <form onDoubleClick={b2normal} className="px-3 py-4 position-relative">
+                <form onDoubleClick={b2normal} className="px-3 py-4 position-relative frm">
 
                     <input
-                        className="border-top-0 border-end-0 border-start-0 border-warning"
+                        className="border-top-0 border-end-0 border-start-0 border-warning fw-bold text-body inpt"
                         type="text"
                         name="title"
                         value={note.title}
@@ -57,7 +59,7 @@ const CreateNote = (props) => {
                                 name="content"
                                 value={note.content}
                                 onChange={inputEvent}
-                                placeholder="Write a Note">
+                                placeholder="Write a Note...">
                             </textarea>
                             <Button onClick={addEvent}>
                                 <AddIcon />
